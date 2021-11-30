@@ -1,9 +1,10 @@
-$color-primary: #333;
-$color-secondary: rgba($color-primary, 0.6);
+$color-primary: #34312d;
+$color-secondary: #353535;
+$color-highlight: #f72585;
 
-$color-red: #ae2012;
-$color-white: #fff;
+$color-white: #fdfdff;
 $color-black: #000;
+// $color-red: #ae2012;
 $color-grey: #f3f3f3;
 $color-grey-dark: #e5e5e5;
 
@@ -22,7 +23,7 @@ $margin-md: 4rem;
 $margin-lg: 6rem;
 $margin-xl: 8rem;
 $margin-xxl: 12rem;
-$margin-xxxl: 14rem;
+$margin-xxxl: 16rem;
 
 $box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.25);
 $box-shadow-1: 0 1rem 2rem rgba(0, 0, 0, 0.2);
@@ -47,4 +48,4 @@ $bp-xs: 40em; //640px
 $bp-xxs: 36.25em; //580px
 $bp-xxxs: 30em; //480px
 
-$image-width: 40rem;
+// $image-width: 40rem;

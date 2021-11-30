@@ -3,10 +3,262 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
     <link rel="stylesheet" href="css/style.css" />
     <title>JW Portfolio</title>
   </head>
   <body>
-    <h1 class="heading--1">JW Portfolio</h1>
+    <div class="container">
+      <!-- insert sidebar menu -->
+      <main-sidebar></main-sidebar>
+
+      <div class="content">
+        <div class="intro">
+          <div class="intro__text">
+            <p class="intro__hello">Hello, I'm</p>
+            <h1 class="heading--1 intro__name">Jodi Wei.</h1>
+            <p class="intro__headline">
+              I love building things from scratch<span>.</span>
+            </p>
+            <p class="intro__paragraph">
+              I am a web developer, specializing in creating user-centered
+              digital experiences and turning ideas into practical products.
+            </p>
+          </div>
+
+          <!-- insert email button -->
+          <main-contact></main-contact>
+        </div>
+
+        <section class="home__section about" id="about">
+          <h2 class="heading--2 home__section-heading">01. About Me</h2>
+          <div class="about__content">
+            <div class="about__text">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia
+                molestias dignissimos explicabo sint voluptas amet accusamus et
+                sit illum, perferendis est officiis repudiandae doloremque
+                consequuntur saepe tempore eligendi! Ad, ullam.Suscipit ut
+                tenetur corporis exercitationem beatae provident corrupti,
+                inventore esse vel? Eum laborum laboriosam corrupti, veritatis
+                commodi porro voluptatum, quae officia unde voluptatibus iste
+                exercitationem perspiciatis totam fuga voluptates saepe.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eos
+                qui rem, in est vitae nulla eaque adipisci praesentium libero
+                provident! Placeat tempora voluptates illo blanditiis mollitia,
+                rerum obcaecati ratione!
+              </p>
+            </div>
+            <div class="about__img-container">
+              <img src="/media/placeholder.jpg" alt="" class="about__img" />
+            </div>
+          </div>
+        </section>
+
+        <!-- projects start -->
+        <section class="home__section projects" id="projects">
+          <h2 class="heading--2 home__section-heading">02. Projects</h2>
+          <div class="projects__container">
+            <div class="projects__item">
+              <div class="projects__img-container">
+                <img
+                  src="/media/placeholder.jpg"
+                  alt=""
+                  class="projects__img"
+                />
+              </div>
+              <div class="projects__summary">
+                <div class="projects__text">
+                  <h3 class="projects__title">Project #1</h3>
+                  <p class="projects__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Omnis explicabo vel corporis porro quibusdam sunt atque
+                    facere sint, repudiandae sapiente.
+                  </p>
+                </div>
+                <div class="projects__actions">
+                  <div class="projects__view-details">
+                    <a href="/projects/project-1.html" class="projects__link">
+                      <button>View Details</button>
+                    </a>
+                  </div>
+                  <div class="projects__social-actions">
+                    <a href="/projects/project-1.html" class="projects__link">
+                      <i class="fab fa-github projects__icon"></i>
+                    </a>
+                    <a href="/projects/project-1.html" class="projects__link">
+                      <i class="fas fa-external-link-alt projects__icon"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="projects__item">
+              <div class="projects__img-container">
+                <img
+                  src="/media/placeholder.jpg"
+                  alt=""
+                  class="projects__img"
+                />
+              </div>
+              <div class="projects__summary">
+                <div class="projects__text">
+                  <h3 class="projects__title">Project #2</h3>
+                  <p class="projects__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Omnis explicabo vel corporis porro quibusdam sunt atque
+                    facere sint, repudiandae sapiente.
+                  </p>
+                </div>
+                <div class="projects__actions">
+                  <div class="projects__view-details">
+                    <a href="/projects/project-1.html" class="projects__link">
+                      <button>View Details</button>
+                    </a>
+                  </div>
+                  <div class="projects__social-actions">
+                    <a href="/projects/project-1.html" class="projects__link">
+                      <i class="fab fa-github projects__icon"></i>
+                    </a>
+                    <a href="/projects/project-1.html" class="projects__link">
+                      <i class="fas fa-external-link-alt projects__icon"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="projects__item">
+              <div class="projects__img-container">
+                <img
+                  src="/media/placeholder.jpg"
+                  alt=""
+                  class="projects__img"
+                />
+              </div>
+              <div class="projects__summary">
+                <div class="projects__text">
+                  <h3 class="projects__title">Project #3</h3>
+                  <p class="projects__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Omnis explicabo vel corporis porro quibusdam sunt atque
+                    facere sint, repudiandae sapiente.
+                  </p>
+                </div>
+                <div class="projects__actions">
+                  <div class="projects__view-details">
+                    <a href="/projects/project-1.html" class="projects__link">
+                      <button>View Details</button>
+                    </a>
+                  </div>
+                  <div class="projects__social-actions">
+                    <a href="/projects/project-1.html" class="projects__link">
+                      <i class="fab fa-github projects__icon"></i>
+                    </a>
+                    <a href="/projects/project-1.html" class="projects__link">
+                      <i class="fas fa-external-link-alt projects__icon"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="projects__item">
+              <div class="projects__img-container">
+                <img
+                  src="/media/placeholder.jpg"
+                  alt=""
+                  class="projects__img"
+                />
+              </div>
+              <div class="projects__summary">
+                <div class="projects__text">
+                  <h3 class="projects__title">Project #4</h3>
+                  <p class="projects__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Omnis explicabo vel corporis porro quibusdam sunt atque
+                    facere sint, repudiandae sapiente.
+                  </p>
+                </div>
+                <div class="projects__actions">
+                  <div class="projects__view-details">
+                    <a href="/projects/project-1.html" class="projects__link">
+                      <button>View Details</button>
+                    </a>
+                  </div>
+                  <div class="projects__social-actions">
+                    <a href="/projects/project-1.html" class="projects__link">
+                      <i class="fab fa-github projects__icon"></i>
+                    </a>
+                    <a href="/projects/project-1.html" class="projects__link">
+                      <i class="fas fa-external-link-alt projects__icon"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="projects__item">
+              <div class="projects__img-container">
+                <img
+                  src="/media/placeholder.jpg"
+                  alt=""
+                  class="projects__img"
+                />
+              </div>
+              <div class="projects__summary">
+                <div class="projects__text">
+                  <h3 class="projects__title">Project #5</h3>
+                  <p class="projects__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Omnis explicabo vel corporis porro quibusdam sunt atque
+                    facere sint, repudiandae sapiente.
+                  </p>
+                </div>
+                <div class="projects__actions">
+                  <div class="projects__view-details">
+                    <a href="/projects/project-1.html" class="projects__link">
+                      <button>View Details</button>
+                    </a>
+                  </div>
+                  <div class="projects__social-actions">
+                    <a href="/projects/project-1.html" class="projects__link">
+                      <i class="fab fa-github projects__icon"></i>
+                    </a>
+                    <a href="/projects/project-1.html" class="projects__link">
+                      <i class="fas fa-external-link-alt projects__icon"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- projects end -->
+
+        <section class="home__section contact">
+          <h2 class="heading--2 home__section-heading">
+            03. Let's Get In Touch!
+          </h2>
+          <p>
+            My inbox is always open for new ideas. Feel free to drop a message
+            if you fancy a chat.
+          </p>
+          <main-contact></main-contact>
+        </section>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p class="footer__text">&copy Copyright Jodi Wei 2021</p>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="components.js"></script>
   </body>
 </html>
