@@ -54,7 +54,9 @@ class Sidebar extends HTMLElement {
 class Footer extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
-    <h3>Footer</h3>
+    <div class="footer">
+      <p class="footer__text">&copy Copyright Jodi Wei 2021</p>
+    </div>
     `;
   }
 }

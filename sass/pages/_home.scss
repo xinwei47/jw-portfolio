@@ -94,6 +94,15 @@ main-contact {
     }
   }
 
+  &__link {
+    &,
+    &:link,
+    &:visited {
+      text-decoration: none;
+      color: $color-highlight;
+    }
+  }
+
   &__img-container {
     // width: 50rem;
     // height: 50rem;
@@ -162,13 +171,21 @@ main-contact {
     margin: $margin-sm 0;
   }
 
+  &__tech {
+    font-size: 1.4rem;
+    color: $color-grey-dark;
+    margin-bottom: $margin-sm;
+  }
+
   &__actions {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
   }
 
   &__view-details {
     & button {
+      font-family: inherit;
+      font-size: 1.2rem;
       cursor: pointer;
       padding: $padding-xxs $padding-sm;
       border: none;
@@ -182,6 +199,7 @@ main-contact {
   }
 
   &__link {
+    transition: all 0.2s;
     &,
     &:link,
     &:visited {
@@ -191,6 +209,10 @@ main-contact {
 
     &:not(:last-of-type) {
       margin-right: $margin-sm;
+    }
+
+    &:hover {
+      color: $color-highlight;
     }
   }
 }

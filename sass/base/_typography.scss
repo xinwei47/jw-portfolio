@@ -12,14 +12,22 @@ body {
 }
 
 .heading--2 {
-  font-size: 2.4rem;
+  font-size: 3.2rem;
 }
 
 .heading--3 {
-  font-size: 1.6rem;
+  font-size: 2.4rem;
 }
 
 .heading--4 {
-  font-size: 1.4rem;
+  font-size: 2rem;
   font-weight: 400;
+}
+
+.heading--5 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding-bottom: $padding-xxs;
+  text-decoration: underline;
+  // border-bottom: 1px solid $color-white;
 }

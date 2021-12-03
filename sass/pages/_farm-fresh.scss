@@ -1,0 +1,159 @@
+.project {
+  // background-color: $color-white;
+
+  & h2 {
+    margin-bottom: $margin-md;
+  }
+
+  & h3 {
+    margin-top: $margin-md;
+    margin-bottom: $margin-xs;
+  }
+
+  & h4 {
+    margin: $margin-md 0;
+  }
+
+  & h5 {
+    margin-top: $margin-md;
+    margin-bottom: $margin-sm;
+  }
+
+  & p {
+    line-height: 1.5em;
+  }
+
+  & li {
+    &:not(:last-of-type) {
+      margin-bottom: $margin-xs;
+    }
+  }
+
+  &__two-columns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: $grid-gap-sm;
+
+    @media only screen and (max-width: $bp-lg) {
+      display: block;
+    }
+  }
+
+  &__column-left {
+    margin-right: $margin-md;
+  }
+
+  &__column-right {
+  }
+
+  &__title {
+    font-size: 4rem;
+    text-align: center;
+    margin-top: $margin-xl;
+  }
+
+  &__section {
+    margin-top: $margin-lg;
+  }
+
+  &__section-title {
+    text-align: center;
+    color: $color-highlight;
+  }
+
+  &__subsection {
+    margin-top: $margin-sm;
+  }
+
+  &__subsection-title {
+  }
+
+  &__subject-title {
+  }
+
+  &__highlight-text {
+    font-weight: 700;
+    color: $color-highlight;
+  }
+
+  &__bolded-text {
+    font-weight: 700;
+  }
+
+  &__process {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 200px);
+    gap: $grid-gap-sm;
+    justify-content: center;
+
+    &-category {
+      font-size: 2rem;
+      font-weight: 700;
+    }
+
+    &-img {
+      height: 8rem;
+    }
+
+    &-icon {
+      height: 100%;
+    }
+
+    &-title {
+      font-size: 2rem;
+      margin-top: $margin-sm;
+    }
+    &-steps {
+      font-size: 1.6rem;
+      font-weight: 400;
+      margin-top: $margin-xs;
+    }
+  }
+
+  &__img-box-sm {
+    max-width: 60rem;
+  }
+
+  &__img-box-lg {
+    margin-top: $margin-md;
+  }
+
+  &__img-box-sm,
+  &__img-box-lg {
+    transition: all 0.2s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  &__img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__img-resize {
+    width: 70%;
+  }
+
+  &__design-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 200px);
+    gap: $grid-gap-xxs;
+
+    & p {
+      text-align: center;
+      margin-bottom: $margin-xs;
+    }
+  }
+
+  &__prototype {
+    margin-top: $margin-lg;
+    display: flex;
+    justify-content: center;
+  }
+}
