@@ -6,7 +6,7 @@ class Sidebar extends HTMLElement {
     <div class="sidebar">
       <a href="/index.html" target="_parent">
         <div class="sidebar__logo-box">
-          <img src="/media/jw-logo.png" alt="" class="sidebar__logo" />
+          <img src="/media/logo.svg" alt="" class="sidebar__logo" />
         </div>
       </a>
 
@@ -64,12 +64,12 @@ class Footer extends HTMLElement {
 class Contact extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
-    <a href="" class="email">
+    <a href="mailto:xinwei2014@u.northwestern.edu" class="email">
       <div class="email__icon-box">
         <i class="far fa-paper-plane email__icon"></i>
       </div>
       <div class="email__address-box">
-        <p class="email__address">hello@jodiwei.com</p>
+        <p class="email__address">Contact me!</p>
       </div>
     </a>
     `;
