@@ -1,0 +1,61 @@
+menu-toggle {
+  cursor: pointer;
+  position: fixed;
+  top: 40px;
+  left: 25px;
+  z-index: 100;
+  display: none;
+
+  @media only screen and (max-width: $bp-md) {
+    display: inline-block;
+  }
+}
+
+.menu-toggle {
+  width: 4rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    .menu-toggle__icon::before {
+      top: -1.2rem;
+    }
+
+    .menu-toggle__icon::after {
+      top: 1.2rem;
+    }
+  }
+
+  &:active {
+    transform: translateY(2px);
+  }
+
+  &__icon {
+    position: relative;
+
+    &,
+    &::before,
+    &::after {
+      display: inline-block;
+      width: 3.2rem;
+      height: 2px;
+      background-color: $color-highlight;
+    }
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+    }
+
+    &::before {
+      top: -1rem;
+    }
+
+    &::after {
+      top: 1rem;
+    }
+  }
+}

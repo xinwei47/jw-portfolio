@@ -1,7 +1,23 @@
-.sidebar {
+main-sidebar {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+}
+
+.sidebar {
+  grid-column: 1/2;
+  height: 100%;
+  width: calc(100vw / 6);
+
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media only screen and (max-width: $bp-md) {
+    display: none;
+  }
 
   &__logo-box {
     height: 7rem;
@@ -62,4 +78,10 @@
   &__icon {
     font-size: 1.6rem;
   }
+}
+
+.show {
+  display: inherit;
+  background-color: $color-primary;
+  width: 30%;
 }

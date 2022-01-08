@@ -9,6 +9,10 @@ body {
 
 .heading--1 {
   font-size: 8rem;
+
+  @media only screen and (max-width: $bp-sm) {
+    font-size: 6rem;
+  }
 }
 
 .heading--2 {
@@ -29,5 +33,4 @@ body {
   font-weight: 700;
   padding-bottom: $padding-xxs;
   text-decoration: underline;
-  // border-bottom: 1px solid $color-white;
 }

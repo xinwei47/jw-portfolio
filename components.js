@@ -3,8 +3,7 @@
 class Sidebar extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
-    <div class="sidebar">
-      <a href="/index.html" target="_parent">
+      <a href="/index.html" target="_parent" class="sidebar__link">
         <div class="sidebar__logo-box">
           <img src="/media/logo.svg" alt="" class="sidebar__logo" />
         </div>
@@ -13,39 +12,53 @@ class Sidebar extends HTMLElement {
       <ul class="sidebar__menu-list">
         <li class="sidebar__menu-item">
           <a
-            class="sidebar__menu-link"
+            class="sidebar__link sidebar__menu-link"
             href="/index.html#about"
             target="_parent"
-            >01. About</a
+            >About</a
           >
         </li>
         <li class="sidebar__menu-item">
           <a
-            class="sidebar__menu-link"
+            class="sidebar__link sidebar__menu-link"
             href="/index.html#projects"
             target="_parent"
-            >02. Projects</a
+            >Projects</a
           >
         </li>
         <li class="sidebar__menu-item">
-          <a class="sidebar__menu-link" href="">03. Contact</a>
+          <a 
+            class="sidebar__link sidebar__menu-link" 
+            href="/index.html#contact" 
+            target="_parent">
+            Contact</a
+          >
         </li>
       </ul>
 
       <div class="sidebar__social">
         <!-- github -->
-        <a href="https://github.com/xinwei47" class="sidebar__icon-link">
+        <a href="https://github.com/xinwei47" class="sidebar__link sidebar__icon-link">
           <i class="fab fa-github sidebar__icon"></i>
         </a>
         <!-- linkedin -->
-        <a href="https://www.linkedin.com/in/jodiwei/" class="sidebar__icon-link">
+        <a href="https://www.linkedin.com/in/jodiwei/" class="sidebar__link sidebar__icon-link">
           <i class="fab fa-linkedin-in sidebar__icon"></i>
         </a>
         <!-- instagram -->
-        <a href="https://www.instagram.com/jodi.travelherway/" class="sidebar__icon-link">
+        <a href="https://www.instagram.com/jodi.travelherway/" class="sidebar__link sidebar__icon-link">
           <i class="fab fa-instagram sidebar__icon"></i>
         </a>
       </div>
+    `;
+  }
+}
+
+class MenuToggle extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = `
+    <div class="menu-toggle">
+      <span class="menu-toggle__icon"></span>
     </div>
     `;
   }
@@ -77,5 +90,6 @@ class Contact extends HTMLElement {
 }
 
 customElements.define('main-sidebar', Sidebar);
+customElements.define('menu-toggle', MenuToggle);
 customElements.define('main-footer', Footer);
 customElements.define('main-contact', Contact);

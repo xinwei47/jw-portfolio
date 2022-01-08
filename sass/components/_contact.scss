@@ -1,0 +1,43 @@
+main-contact {
+  display: flex;
+}
+
+.email {
+  border: 1px solid $color-white;
+  text-decoration: none;
+  display: flex;
+  transition: all 0.4s;
+
+  &:hover {
+    background-color: rgba($color-highlight, 0.6);
+    border: 1px solid rgba($color-highlight, 0.6);
+  }
+
+  &__icon-box {
+    background-color: $color-white;
+    width: 5vw;
+    height: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2.4rem;
+  }
+
+  &__icon {
+    color: $color-highlight;
+    font-size: 1.6rem;
+  }
+
+  &__address-box {
+    justify-self: flex-end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 $padding-lg;
+  }
+
+  &__address {
+    color: $color-white;
+    font-weight: 700;
+  }
+}

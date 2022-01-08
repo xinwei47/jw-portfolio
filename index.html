@@ -14,17 +14,26 @@
     <title>JW Portfolio</title>
   </head>
   <body>
+    <!-- sidebar menu toggle -->
+    <menu-toggle></menu-toggle>
+
     <div class="container">
       <!-- insert sidebar menu -->
-      <main-sidebar></main-sidebar>
+      <div class="sidebar">
+        <main-sidebar></main-sidebar>
+      </div>
 
       <div class="content">
         <div class="intro">
           <div class="intro__text">
             <p class="intro__hello">Hello, I'm</p>
-            <h1 class="heading--1 intro__name">Jodi Wei.</h1>
+            <h1 class="heading--1 intro__name">
+              Jodi Wei<span class="intro__period">.</span>
+            </h1>
             <p class="intro__headline">
-              I love building things from scratch<span>.</span>
+              I love building things from scratch<span class="intro__period"
+                >.</span
+              >
             </p>
             <p class="intro__paragraph">
               I am a web developer, specializing in creating user-centered
@@ -37,7 +46,9 @@
         </div>
 
         <section class="home__section about" id="about">
-          <h2 class="heading--2 home__section-heading">01. About Me</h2>
+          <h2 class="heading--2 home__section-heading">
+            <span class="home__section-number">01.</span> About Me
+          </h2>
           <div class="about__content">
             <div class="about__text">
               <p>
@@ -74,7 +85,9 @@
 
         <!-- projects start -->
         <section class="home__section projects" id="projects">
-          <h2 class="heading--2 home__section-heading">02. Projects</h2>
+          <h2 class="heading--2 home__section-heading">
+            <span class="home__section-number">02.</span> Projects
+          </h2>
           <div class="projects__container">
             <div class="projects__item">
               <div class="projects__img-container">
@@ -94,11 +107,6 @@
                   </p>
                 </div>
                 <div class="projects__actions">
-                  <!-- <div class="projects__view-details">
-                    <a href="" class="projects__link">
-                      <button>View Details</button>
-                    </a>
-                  </div> -->
                   <div class="projects__social-actions">
                     <a
                       href="https://github.com/xinwei47/jw-jewelry-ecomm"
@@ -107,7 +115,11 @@
                     >
                       <i class="fab fa-github projects__icon"></i>
                     </a>
-                    <a href="" class="projects__link" target="_blank">
+                    <a
+                      href="https://jw-jewelry.herokuapp.com/"
+                      class="projects__link"
+                      target="_blank"
+                    >
                       <i class="fas fa-external-link-alt projects__icon"></i>
                     </a>
                   </div>
@@ -134,11 +146,6 @@
                   </p>
                 </div>
                 <div class="projects__actions">
-                  <!-- <div class="projects__view-details">
-                    <a href="" class="projects__link">
-                      <button>View Details</button>
-                    </a>
-                  </div> -->
                   <div class="projects__social-actions">
                     <a
                       href="https://github.com/xinwei47/greenmeals"
@@ -147,7 +154,11 @@
                     >
                       <i class="fab fa-github projects__icon"></i>
                     </a>
-                    <a href="" class="projects__link">
+                    <a
+                      href="https://greenmeals.herokuapp.com/"
+                      class="projects__link"
+                      target="_blank"
+                    >
                       <i class="fas fa-external-link-alt projects__icon"></i>
                     </a>
                   </div>
@@ -172,11 +183,6 @@
                   <p class="projects__tech">Sass, HTML, Javascript</p>
                 </div>
                 <div class="projects__actions">
-                  <!-- <div class="projects__view-details">
-                    <a href="" class="projects__link">
-                      <button>View Details</button>
-                    </a>
-                  </div> -->
                   <div class="projects__social-actions">
                     <a
                       href="https://github.com/xinwei47/THW-landing-page"
@@ -185,7 +191,11 @@
                     >
                       <i class="fab fa-github projects__icon"></i>
                     </a>
-                    <a href="" class="projects__link">
+                    <a
+                      href="https://thw-landing-page.netlify.app/"
+                      class="projects__link"
+                      target="_blank"
+                    >
                       <i class="fas fa-external-link-alt projects__icon"></i>
                     </a>
                   </div>
@@ -214,25 +224,10 @@
                       <button>View Details</button>
                     </a>
                   </div>
-                  <!-- <div class="projects__social-actions">
-                    <a href="" class="projects__link">
-                      <i class="fab fa-github projects__icon"></i>
-                    </a>
-                    <a href="" class="projects__link">
-                      <i class="fas fa-external-link-alt projects__icon"></i>
-                    </a>
-                  </div> -->
                 </div>
               </div>
             </div>
             <div class="projects__item">
-              <div class="projects__img-container">
-                <!-- <img
-                  src="/media/placeholder.jpg"
-                  alt=""
-                  class="projects__img"
-                /> -->
-              </div>
               <div class="projects__summary">
                 <div class="projects__text">
                   <h3 class="heading--3 projects__title">JW Portfolio</h3>
@@ -243,11 +238,6 @@
                   <p class="projects__tech">Sass, HTML, Javascript</p>
                 </div>
                 <div class="projects__actions">
-                  <!-- <div class="projects__view-details">
-                    <a href="" class="projects__link">
-                      <button>View Details</button>
-                    </a>
-                  </div> -->
                   <div class="projects__social-actions">
                     <a
                       href="https://github.com/xinwei47/jw-portfolio"
@@ -256,9 +246,6 @@
                     >
                       <i class="fab fa-github projects__icon"></i>
                     </a>
-                    <!-- <a href="" class="projects__link">
-                      <i class="fas fa-external-link-alt projects__icon"></i>
-                    </a> -->
                   </div>
                 </div>
               </div>
@@ -267,9 +254,9 @@
         </section>
         <!-- projects end -->
 
-        <section class="home__section contact">
+        <section class="home__section contact" id="contact">
           <h2 class="heading--2 home__section-heading">
-            03. Let's Get In Touch!
+            <span class="home__section-number">03.</span> Let's Get In Touch!
           </h2>
           <p>
             My inbox is always open for new ideas. Feel free to drop a message
@@ -281,7 +268,7 @@
     </div>
 
     <main-footer></main-footer>
-    <script src="app.js"></script>
     <script src="components.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
