@@ -1,6 +1,4 @@
 .project {
-  // background-color: $color-white;
-
   & h2 {
     margin-bottom: $margin-md;
   }
@@ -53,7 +51,8 @@
   }
 
   &__section {
-    margin-top: $margin-lg;
+    margin-top: $margin-xl;
+    margin-bottom: $margin-xl;
   }
 
   &__section-title {

@@ -7,10 +7,17 @@
 }
 
 html {
+  height: 100%;
+  width: 100%;
   font-size: 62.5%; //10px
 }
 
 body {
   box-sizing: border-box;
   background-color: $color-secondary;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
 }

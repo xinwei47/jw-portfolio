@@ -8,12 +8,19 @@
 }
 
 html {
+  height: 100%;
+  width: 100%;
   font-size: 62.5%;
 }
 
 body {
   box-sizing: border-box;
   background-color: #353535;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
 }
 
 body {
@@ -132,11 +139,6 @@ main-sidebar {
   display: inherit;
   background-color: #34312d;
   width: 30%;
-}
-
-.container {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
 }
 
 .content {
@@ -364,7 +366,8 @@ main-sidebar {
   margin-top: 8rem;
 }
 .project__section {
-  margin-top: 6rem;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
 }
 .project__section-title {
   text-align: center;
