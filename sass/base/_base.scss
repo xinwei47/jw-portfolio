@@ -14,10 +14,10 @@ html {
 
 body {
   box-sizing: border-box;
-  background-color: $color-secondary;
 }
 
 .container {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
+  background-color: $color-secondary;
 }
