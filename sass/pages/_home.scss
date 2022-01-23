@@ -3,8 +3,13 @@
   background-color: $color-primary;
   padding: 0 $padding-lg;
 
-  @media only screen and (max-width: $bp-md) {
+  @media only screen and (max-width: $bp-lg) {
     grid-column: 1/-1;
+    padding: 0 $padding-md;
+  }
+
+  @media only screen and (max-width: $bp-xxs) {
+    padding: 0 $content-padding;
   }
 }
 
@@ -124,7 +129,7 @@
     grid-template-columns: repeat(9, 1fr);
     gap: $grid-gap-xs;
 
-    @media only screen and (max-width: $bp-lg) {
+    @media only screen and (max-width: $bp-sm) {
       display: flex;
       flex-direction: column;
     }

@@ -6,7 +6,6 @@ main-sidebar {
 }
 
 .sidebar {
-  grid-column: 1/2;
   height: 100%;
   width: calc(100vw / 6);
 
@@ -15,7 +14,7 @@ main-sidebar {
   justify-content: center;
   align-items: center;
 
-  @media only screen and (max-width: $bp-md) {
+  @media only screen and (max-width: $bp-lg) {
     display: none;
   }
 
@@ -84,4 +83,24 @@ main-sidebar {
   display: inherit;
   background-color: $color-primary;
   width: 30%;
+  animation: display 3s;
+
+  @media only screen and (max-width: $bp-xxs) {
+    width: 100%;
+  }
+}
+
+@keyframes display {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 2.5;
+  }
+  80% {
+    opacity: 5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
