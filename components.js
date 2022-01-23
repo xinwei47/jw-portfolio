@@ -29,6 +29,14 @@ class Sidebar extends HTMLElement {
         <li class="sidebar__menu-item">
           <a 
             class="sidebar__link sidebar__menu-link" 
+            href="media/resume.pdf" 
+            target="_blank">
+            Resume</a
+          >
+        </li>
+        <li class="sidebar__menu-item">
+          <a 
+            class="sidebar__link sidebar__menu-link" 
             href="/index.html#contact" 
             target="_parent">
             Contact</a

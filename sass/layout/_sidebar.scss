@@ -85,7 +85,7 @@ main-sidebar {
   width: 30%;
   animation: display 3s;
 
-  @media only screen and (max-width: $bp-xxs) {
+  @media only screen and (max-width: $bp-sm) {
     width: 100%;
   }
 }

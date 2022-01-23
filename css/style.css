@@ -140,7 +140,7 @@ main-sidebar {
   width: 30%;
   animation: display 3s;
 }
-@media only screen and (max-width: 36.25em) {
+@media only screen and (max-width: 47.5em) {
   .show {
     width: 100%;
   }
