@@ -46,16 +46,25 @@ class Sidebar extends HTMLElement {
 
       <div class="sidebar__social">
         <!-- github -->
-        <a href="https://github.com/xinwei47" class="sidebar__link sidebar__icon-link">
-          <i class="fab fa-github sidebar__icon"></i>
+        <a 
+          href="https://github.com/xinwei47" 
+          class="sidebar__link sidebar__icon-link" 
+          target="_blank">
+            <i class="fab fa-github sidebar__icon"></i>
         </a>
         <!-- linkedin -->
-        <a href="https://www.linkedin.com/in/jodiwei/" class="sidebar__link sidebar__icon-link">
-          <i class="fab fa-linkedin-in sidebar__icon"></i>
+        <a 
+          href="https://www.linkedin.com/in/jodiwei/" 
+          class="sidebar__link sidebar__icon-link" 
+          target="_blank">
+            <i class="fab fa-linkedin-in sidebar__icon"></i>
         </a>
         <!-- instagram -->
-        <a href="https://www.instagram.com/jodi.travelherway/" class="sidebar__link sidebar__icon-link">
-          <i class="fab fa-instagram sidebar__icon"></i>
+        <a 
+          href="https://www.instagram.com/jodi.travelherway/" 
+          class="sidebar__link sidebar__icon-link" 
+          target="_blank">
+            <i class="fab fa-instagram sidebar__icon"></i>
         </a>
       </div>
     `;
